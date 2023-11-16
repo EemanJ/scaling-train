@@ -1,0 +1,176 @@
+$neutral_bg: #070032;
+$blue_bg: #00408A;
+$purple_bg: #461D6B;
+$violet_bg: #3920B0;
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: $neutral_bg;
+    background-image: url("./images/a.svg");
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Inter; 
+    overflow: hidden;
+}
+
+.top-menu { 
+    color: #6DA7FF; 
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+    margin: 1rem;
+}
+
+.options{
+    padding: 1rem;
+    width: auto;
+    height: 1.25rem;
+}
+
+.left-side {
+    left: 0;
+    text-align: left;
+    float: left;
+}
+
+.right-side {
+    right: 0;
+    text-align: right;
+    float: right;
+}
+
+.horizontal-center {
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+  
+.column-side {
+    flex: 20%;
+    padding: 5rem;
+
+}
+
+.column {
+    flex: 60%;
+    margin-top: -3.5%;
+}
+
+h1 {
+    font-size: 7.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 86.523%;
+    width: 70% !important;
+    z-index: 1;
+}
+
+h4 {
+    color: #B85BFF;
+    font-size: 1.25rem;
+    line-height: normal; 
+}
+
+p {
+    color: #6DA7FF;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+img { height: 30rem;}
+
+.card-button {
+    margin: 0;
+    padding: 0;
+    border-radius: 5%;
+    background: transparent;
+    border: none;
+    position: relative;
+    display: inline-block;
+}
+
+.card-button.active {
+    z-index: 10;
+    margin-top:-30%;
+}
+
+.card1 {
+    transform: rotate(-15deg) translateY(3rem);
+    position: -10%;
+    flex-shrink: 0;
+    z-index: 2; 
+}
+
+.card1:hover {
+    transform: scale(1.05) rotate(-15deg) translateY(3rem);
+    transition-duration: 1s;;
+}
+
+.card1.active {
+    transform: scale(1.1) rotate(-15deg) translateY(0.5rem);
+    transition-duration: 1s;
+    z-index: 10;
+}
+
+.card2 {
+    flex-shrink: 0;
+    z-index: 3; 
+    margin-left: -15%;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+    transition-duration: 1s;;
+}
+
+.card2.active {
+    transform: scale(1.1);
+    transition-duration: 1s;
+    z-index: 10;
+}
+
+.card3 {
+    transform: rotate(15deg) translateY(3rem);
+    flex-shrink: 0;
+    z-index: 4; 
+    margin-left: -20%;
+}
+
+.card3:hover {
+    transform: scale(1.05) rotate(15deg) translateY(3rem);
+    transition-duration: 1s;;
+}
+
+.card3.active {
+    transform: scale(1.1) rotate(15deg) translateY(0.5rem);
+    transition-duration: 1s;
+    z-index: 10;
+}
+
+body.blue {
+    background-color: $blue_bg;
+}
+
+p.blue {color: white;}
+
+p.blue, p.purple, p.violet {color: white;}
+
+.top-menu.blue, .top-menu.purple, .top-menu.violet {color: white;}
+
+body.purple {
+    background-color: $purple_bg;
+}
+
+body.violet {
+    background-color: $violet_bg;
+}
